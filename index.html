@@ -47,13 +47,24 @@
 <div class="container mt-5">
     <h2 class="mb-4 text-center">Nossos Monitores</h2>
     <div class="row g-4">
+        
     <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card h-100">
         <img src="./images/monitor_27_lg_full_hd_ips_freesync_hdmi_bordas_finas_27mp400_b_18919_2_bc6a7d7ddcc83e23aa6ebe7fa6837a0d.webp" class="card-img-top" alt="Monitor 27">
         <div class="card-body">
             <h5 class="card-title">Moonview 27" Full HD</h5>
             <p class="card-text">Painel IPS, 75Hz, bordas ultrafinas.</p>
-            <button class="btn btn-primary w-100 add-to-cart">Comprar - R$ 899,00</button>
+         <button onclick="adicionarAoCarrinho('Monitor Curvo 34', 2.499)" class="btn btn-warning w-100 add-to-cart">
+        Comprar - R$899,00
+        </button>
+    <script>
+        function adicionarAoCarrinho(nome, preco) {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push({ nome, preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert(`${nome} foi adicionado ao carrinho.`);
+        }
+        </script>
         </div>
         </div>
     </div>
@@ -84,13 +95,22 @@
         <div class="card-body">
             <h5 class="card-title">Moonview Pro 32" 4K</h5>
             <p class="card-text">Resolução UHD, fidelidade de cores para designers.</p>
-            <button class="btn btn-warning w-100 add-to-cart">Comprar - R$ 3.199,00</button>
+                        <button onclick="adicionarAoCarrinho('Monitor Curvo 34', 2.499)" class="btn btn-warning w-100 add-to-cart">
+        Comprar - R$3.199,00
+        </button>
+    <script>
+        function adicionarAoCarrinho(nome, preco) {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push({ nome, preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert(`${nome} foi adicionado ao carrinho.`);
+        }
+        </script>
         </div>
         </div>
     </div>
     </div>
 </div> 
-<!-- btn btn-warning w-100 add-to-cart -->
 <div class="container mt-5">
     <h2 class="mb-4 text-center">Sobre a Moonview</h2>
     <div class="row justify-content-center">
