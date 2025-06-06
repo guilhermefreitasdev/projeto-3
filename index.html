@@ -54,8 +54,34 @@
         <div class="card-body">
             <h5 class="card-title">Moonview 27" Full HD</h5>
             <p class="card-text">Painel IPS, 75Hz, bordas ultrafinas.</p>
+<<<<<<< HEAD
         <button onclick="adicionarAoCarrinho('Monitor IPS 75hz 27p', 899)" class="btn btn-warning w-100 add-to-cart">
         Comprar - R$899,00
+=======
+         <button onclick="adicionarAoCarrinho('Monitor Curvo 34', 2.499)" class="btn btn-warning w-100 add-to-cart">
+        Comprar - R$899,00
+        </button>
+    <script>
+        function adicionarAoCarrinho(nome, preco) {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push({ nome, preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert(`${nome} foi adicionado ao carrinho.`);
+        }
+        </script>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+        <img src="./images/Monitor-Gamer-Gigabyte-34-Polegadas-144HZ-1MS-FULL-HD-HDMI-displayport-Curvo-1500r-Flicker-Free-Vesa-G34wqc-sa_1696272496_gg.webp" class="card-img-top" alt="Monitor Curvo">
+        <div class="card-body">
+            <h5 class="card-title">Moonview Curvo 34" QHD</h5>
+            <p class="card-text">2K, 144Hz, HDR10, curvo e imersivo.</p>
+            <button onclick="adicionarAoCarrinho('Monitor Curvo 34', 2.499)" class="btn btn-warning w-100 add-to-cart">
+        Comprar - R$2.499,00
+>>>>>>> d048458bb6505f57aafacb407a3e667227facc3e
         </button>
     <script>
         function adicionarAoCarrinho(nome, preco) {
@@ -88,10 +114,24 @@
         <div class="card-body">
             <h5 class="card-title">Moonview Pro 32" 4K</h5>
             <p class="card-text">Resolução UHD, fidelidade de cores para designers.</p>
+<<<<<<< HEAD
                         <button onclick="adicionarAoCarrinho('Monitor UHD 32p 4K', 3.199)" class="btn btn-warning w-100 add-to-cart">
         Comprar - R$3.199,00
         </button>
     
+=======
+                        <button onclick="adicionarAoCarrinho('Monitor Curvo 34', 2.499)" class="btn btn-warning w-100 add-to-cart">
+        Comprar - R$3.199,00
+        </button>
+    <script>
+        function adicionarAoCarrinho(nome, preco) {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push({ nome, preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert(`${nome} foi adicionado ao carrinho.`);
+        }
+        </script>
+>>>>>>> d048458bb6505f57aafacb407a3e667227facc3e
         </div>
         </div>
     </div>
